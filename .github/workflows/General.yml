@@ -1,0 +1,43 @@
+name: Rust CI
+
+on: [push, pull_request]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  check:
+    name: Rust CI (fmt + test + clippy)
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        task:
+          - fmt
+          - test
+          - clippy
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: ${{ matrix.task == 'fmt' && 'rustfmt' || matrix.task == 'clippy' && 'clippy' || '' }}
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Run ${{ matrix.task }}
+        working-directory: zero2prod
+        run: |
+          case "${{ matrix.task }}" in
+            fmt)
+              cargo fmt --all -- --check
+              ;;
+            test)
+              cargo test --all
+              ;;
+            clippy)
+              cargo clippy --all-targets --all-features -- -D warnings
+              ;;
+          esac
