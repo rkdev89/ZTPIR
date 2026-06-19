@@ -1,0 +1,8 @@
+C:\Users\ricky\Documents\Learning\Learning2026\Rust\ZTPIR\zero2prod\target\debug\deps\windows_link-d2ef63ecef51002c.d: C:\Users\ricky\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-link-0.2.1\src\lib.rs C:\Users\ricky\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-link-0.2.1\src\../readme.md
+
+C:\Users\ricky\Documents\Learning\Learning2026\Rust\ZTPIR\zero2prod\target\debug\deps\libwindows_link-d2ef63ecef51002c.rlib: C:\Users\ricky\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-link-0.2.1\src\lib.rs C:\Users\ricky\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-link-0.2.1\src\../readme.md
+
+C:\Users\ricky\Documents\Learning\Learning2026\Rust\ZTPIR\zero2prod\target\debug\deps\libwindows_link-d2ef63ecef51002c.rmeta: C:\Users\ricky\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-link-0.2.1\src\lib.rs C:\Users\ricky\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-link-0.2.1\src\../readme.md
+
+C:\Users\ricky\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-link-0.2.1\src\lib.rs:
+C:\Users\ricky\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-link-0.2.1\src\../readme.md:
